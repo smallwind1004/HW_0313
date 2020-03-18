@@ -45,8 +45,9 @@ public class Hero {
     public String getRskill() {
         return R_skill;
     }
-    public String getAll(){
-        return "Hero name:\n" + name + "\nQ Skill\n" + Q_skill + "\nW Skill\n" +
-                W_skill + "\nE Skill\n" + E_skill + "\nR Skill\n" + R_skill;
+
+    public String getAll() {
+        return "Hero name:\n" + name + "\nQ Skill\n" + Q_skill + "\nW Skill\n" + W_skill + "\nE Skill\n" + E_skill
+                + "\nR Skill\n" + R_skill;
     }
 }

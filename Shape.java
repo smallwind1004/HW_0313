@@ -32,29 +32,31 @@ public class Shape {
         this.de = Math.toRadians(degree);
     }
 
-    public double getPerimeter(){
+    public double getPerimeter() {
         if (r != 0) {
             return 2 * r * Math.PI;
-        }else{
-            if(de == 0){
+        } else {
+            if (de == 0) {
                 return 2 * (a + b);
-            }else{
+            } else {
                 return a + b + Math.sqrt(a * a + b * b - 2 * a * b * Math.cos(de));
             }
         }
     }
-    public double getArea(){
+
+    public double getArea() {
         if (r != 0) {
             return r * r * Math.PI;
-        }else{
-            if(de == 0){
+        } else {
+            if (de == 0) {
                 return a * b;
-            }else{
+            } else {
                 return a * b * Math.sin(de) / 2;
             }
         }
     }
-    public static int getCount(){
+
+    public static int getCount() {
         return count;
     }
 }
