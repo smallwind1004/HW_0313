@@ -7,7 +7,7 @@ public class HW_01 {
     public static void main(String[] args) {
         Shape shape1 = new Shape(12.98);
         Shape shape2 = new Shape(3.5, 4.5);
-        Shape shape3 = new Shape(3.0, 4.0, 90);
+        Shape shape3 = new Shape(6, 8, 60);
 
         System.out.println(shape1.getPerimeter());
         System.out.println(shape2.getPerimeter());
